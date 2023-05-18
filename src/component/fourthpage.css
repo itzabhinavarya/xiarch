@@ -1,0 +1,77 @@
+.sec-cards{
+    margin: 0 auto;
+    gap:1rem;
+}
+
+.first-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.7rem;
+    text-align: center;
+}
+
+.first-content h2 {
+    width: 44%;
+}
+
+.first-content p {
+    font-size: 1.1rem;
+    width: 78%;
+}
+
+.second-content{
+    padding: 2rem 0;
+}
+
+
+.sec-cards {
+    display: flex;
+    padding: 1rem;
+}
+
+.sec-card {
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 10px rgba(58, 112, 191, 0.15);
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sec-card-title p{
+    font-weight: bold;
+    position: relative;
+    top: 8px;
+    font-size: 1.3rem;
+}
+
+
+.sec-card-desc {
+    font-size: 0.7rem;
+}
+
+.sec-card-desc p {
+    color: #8D8D8D;
+}
+
+.sec-card-btn{
+    width: 100%;
+}
+
+.sec-card-btn button{
+    width: 100%;
+    height: 35px;
+}
+
+.sec-card-img{
+    width: 100px;
+    height: 100px;
+}
+.sec-card-img img{
+    width: inherit;
+    height: inherit;
+}

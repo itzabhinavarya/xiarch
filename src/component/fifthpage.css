@@ -1,0 +1,110 @@
+.page {
+    margin: 2rem auto;
+    /* background: url('../assets/fifthpage/Line.png') no-repeat center;
+    background-size: contain; */
+    position: relative;
+}
+
+.page::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 81%;
+    background-color: var(--black);
+    top: 1px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.page-content:nth-child(even) {
+    width: 40%;
+    margin: 0 60%;
+}
+
+.page-content:nth-child(even)::before {
+    content: '';
+    position: absolute;
+    background: var(--black);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.page-content:nth-child(odd)::before {
+    content: '';
+    position: absolute;
+    background: var(--black);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.page-content:nth-child(odd) {
+    width: 40%;
+}
+
+.page-content p {
+    padding: 0 20px;
+    color: #8D8D8D;
+}
+
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    .page::before {
+        height: 80%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .page::before {
+        height: 79%;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:767px) {
+    .page::before {
+        height: 78%;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:767px) {
+    .page::before {
+        height: 78%;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:767px) {
+    .page::before {
+        height: 78%;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:600px) {
+    .page::before {
+        height: 78%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .page::before{
+        display: none;
+    }
+    .page-content:nth-child(even)::before {
+        display: none;
+    }
+    .page-content:nth-child(odd)::before {
+        display: none;
+    }
+    .page-content:nth-child(even) {
+        width: 100%;
+        margin: 0;
+    }
+    .page-content:nth-child(odd) {
+        width: 100%;
+        margin: 0;
+    }
+}

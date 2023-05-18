@@ -1,0 +1,133 @@
+.hero-section {
+    display: flex;
+    /* justify-content: space-between;  */
+    /* position: relative; */
+    padding: 4rem;
+    /* height: calc(100% + 100px); */
+    /* background-color: aquamarine; */
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.left span {
+    color: #533A6C;
+}
+
+.left h1 {
+    width: 90%;
+}
+
+.right {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    z-index: -1;
+}
+
+.right>img {
+    width: 95%;
+    /* height: 584px; */
+}
+
+
+.hero-box {
+    position: relative;
+    width: fit-content;
+}
+
+.hero-box input {
+    /* width: 100%; */
+    width: 420px;
+    height: 45px;
+    background: #FFFFFF;
+    border: 0.5px solid #8D8D8D;
+    border-radius: 10px;
+    position: relative;
+    z-index: 0;
+}
+
+.hero-box button {
+    position: absolute;
+    right: 2px;
+    border-radius: 10px;
+    width: 100px;
+    height: 90%;
+    padding: 10px;
+    margin: 2px 0;
+    z-index: 0;
+    /* padding: 10px 0; */
+    /* margin: 0 10px; */
+}
+
+@media screen and (min-width:1000px) {
+    .hero-section {
+        height: 630px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .hero-section {
+        background: url('../assets/mainpage/Hero.png') no-repeat;
+        background-position: right;
+    }
+
+    .right {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    /* .hero-section{
+        padding: 0;
+    } */
+    .left {
+        width: 100%;
+        color: var(--white);
+        background-color: var(--black);
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .left span {
+        color: #533A6C;
+    }
+
+    .left h1 {
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .left p {
+        font-size: 13px;
+    }
+
+    .hero-box{
+        width: 100%;
+    }
+
+    .hero-box input {
+        width: inherit;
+        height: 45px;
+        background: #FFFFFF;
+        border: 0.5px solid #8D8D8D;
+        border-radius: 10px;
+        z-index: 0;
+    }
+
+    .hero-box button {
+        position: absolute;
+        right: 2px;
+        border-radius: 10px;
+        width: 60px;
+        height: 90%;
+        padding: 10px;
+        margin: 2px 0;
+        z-index: 0;
+    }
+}

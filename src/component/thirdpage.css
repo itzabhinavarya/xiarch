@@ -1,0 +1,87 @@
+.third-page {
+    background: linear-gradient(108.2deg, #2E2141 28.72%, rgba(122, 59, 172, 0.69) 130.73%);
+    border-radius: 15px;
+    display: flex;
+    margin: 3rem 0;
+}
+
+.third-page-content {
+    padding: 3rem;
+    max-width: 30%;
+}
+
+.third-page-content>h2 {
+    background: radial-gradient(50% 50% at 50% 50%, #A66BFF 0%, #C666EF 25%, #DD62DF 50%, #EE61CF 75%, #FB64BF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.my-card {
+    overflow: scroll;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 3rem;
+    align-items: center;
+}
+
+
+.c-card {
+    padding: 20px;
+    background: #2E2141;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.content {
+    width: max-content;
+    /* width: 100%; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.content>img {
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+}
+
+.content p {
+    color: var(--white);
+}
+
+
+@media screen and (max-width:900px) {
+    .third-page {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .third-page-content{
+        max-width: 100%;
+    }
+    .my-card{
+        padding: 1rem 0;
+    }
+    .c-card {
+        padding: 5px 20px;
+        width: fit-content;
+        height: fit-content;
+    }
+    .content p {
+        font-size: 10px;
+    }
+}
