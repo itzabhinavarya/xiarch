@@ -20,9 +20,6 @@ const Navbar = () => {
         <div className="logo">
           <a className="navbar-brand" href="#"><img src={Logo} alt="" /></a>
         </div>
-        {/* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> */}
         <div className={showMediaIcon ? "collapse navbar-collapse justify-content-end mobile-device" : "collapse navbar-collapse justify-content-end"} id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
